@@ -1,0 +1,40 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: $black;
+}
+
+main,
+footer {
+    overflow-x: hidden;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.container {
+    // 1280px
+    width: 66.66%;
+    margin: auto;
+    padding: 0;
+
+    @include tablet {
+        // 952px
+        width: 93.33%;
+    }
+
+    @include mobile {
+        // 296px
+        width: 92.5%;
+    }
+}
