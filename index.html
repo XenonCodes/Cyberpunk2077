@@ -42,7 +42,7 @@
         <section class="hero">
             <h1 class="visually-hidden">Промо Киберпанк</h1>
             <div class="container hero__container">
-                <div>
+                <div class="hero__wrp">
                     <h2 class="hero__title">Доступно на всех платформах</h2>
                     <button class="hero__button">Узнать больше</button>
                 </div>
@@ -52,13 +52,13 @@
         <section class="about">
             <div class="container">
                 <h2 class="about__title">Найт-Сити изменит тебя навсегда!</h2>
-                <p class="about__text"><span>Cyberpunk 2077</span> — приключенческая ролевая игра, действие которой
+                <p class="about__text"><span class="about__text about__text--lselected-text">Cyberpunk 2077</span> — приключенческая ролевая игра, действие которой
                     происходит в мегаполисе Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего. Ты
                     играешь за V, наёмника в поисках устройства, позволяющего обрести бессмертие. Ты сможешь менять
                     киберимпланты, навыки и стиль игры своего персонажа, исследуя открытый мир, где твои поступки влияют
                     на ход сюжета и всё, что тебя окружает.</p>
                 <div class="about__images">
-                    <div>
+                    <div class="about__wrp">
                         <img src="./img/about/Night-City-2.png" alt="Скриншот города в игре">
                         <img src="./img/about/Night-City-3.png" alt="Скриншот города в игре">
                     </div>
@@ -69,26 +69,29 @@
 
         <section class="event">
             <div class="container">
-                <div>
+                <div class="event__wrp">
                     <img src="./img/event/event.svg" alt="Акция">
                     <h2 class="event__title">Играй и выигрывай!</h2>
                 </div>
-                <p class="event__text">Играй в Cyberpunk 2077 и получи возможность выиграть консоль Xbox Series X или Sony PlayStation 5!
+                <p class="event__text">Играй в <span class="event__text event__text--lselected-text">Cyberpunk 2077</span> и получи возможность выиграть консоль <span class="event__text event__text--lselected-text">Xbox Series X</span> или <span class="event__text event__text--lselected-text">Sony PlayStation 5!</span>
                     Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля.
                     Удачи! ;)</p>
-                <div>
+                <div class="event__wrp">
                     <form class="event__form" action="#">
                         <div>
-                            <label for="name">Как тебя зовут?</label>
-                            <input class="event__input" type="text" id="name" name="name" required>
+                            <label class="visually-hidden" for="name">Как тебя зовут?</label>
+                            <input class="event__input" type="text" id="name" name="name" placeholder="Как тебя зовут?" required>
                         </div>
                         <div>
-                            <label for="email">Твой е-mail</label>
-                            <input class="event__input" type="email" id="email" name="email" required>
+                            <label class="visually-hidden" for="email">Твой е-mail</label>
+                            <input class="event__input" type="email" id="email" name="email" placeholder="Твой е-mail" required>
                         </div>
                         <div>
-                            <label for="file">Прикрепить скриншот</label>
-                            <input class="event__input" type="file" id="file" name="file" accept=".png, .jpg, .pdf" required>
+                            <label class="event__label" for="file">
+                                <input class="event__input event__input--file" type="file" id="file" name="file" accept=".png, .jpg, .pdf" required>
+                                Прикрепить скриншот
+                                <span class="event__label event__label--format">.png / .jpg / .pdf</span>
+                            </label>
                         </div>
 
                         <button class="event__button" type="submit">Отправить</button>
