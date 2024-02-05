@@ -1,0 +1,64 @@
+.hp {
+    background-color: $yellow;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 70px 10px 80px;
+    }
+
+    &__wrp-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__wrp-logo {
+        display: flex;
+        margin: 26px 0 0;
+        justify-content: space-between;
+        width: 540px;
+    }
+
+    &__info {
+        max-width: 624px;
+    }
+
+    &__title {
+        font-family: 'Archangelsk', sans-serif;
+        @include font(62px, 63px);
+    }
+
+    &__text {
+        @include font();
+        margin: 0 0 25px 0;
+    }
+
+    &__item {
+        margin: 0 0 16px 0;
+        padding: 6px 6px 6px 42px;
+
+        &:first-child {
+            background-image: url(../img/hp/icon-item-1.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        &:nth-child(2) {
+            background-image: url(../img/hp/icon-item-2.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        &:last-child {
+            background-image: url(../img/hp/icon-item-3.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
+    &__buttom {
+        margin: 40px 0 0;
+        display: inline-block;
+    }
+}

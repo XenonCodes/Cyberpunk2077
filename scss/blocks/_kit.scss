@@ -1,0 +1,26 @@
+.kit {
+
+    &__item {
+        margin: 0 0 16px 0;
+        padding: 6px 6px 6px 42px;
+
+        &:first-child {
+            background-image: url(../img/buy/icon-item-1.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        &:nth-child(2) {
+            background-image: url(../img/buy/icon-item-2.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        &:last-child {
+            background-image: url(../img/buy/icon-item-3.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin: 0 0 70px 0;
+        }
+    }
+}

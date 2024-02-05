@@ -1,0 +1,11 @@
+.button {
+    font-family: 'Roboto', sans-serif;
+    @include font(24px, 40px, 700);
+    padding: 19px 50px;
+    color: $yellow;
+    background: $black;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
