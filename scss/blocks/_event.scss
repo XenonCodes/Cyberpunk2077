@@ -84,9 +84,16 @@
         font-family: 'Roboto', sans-serif;
         @include font(18px, 21px, 700);
         padding: 15px 50px;
+        margin: 0 0 15px 0;
         background: $yellow;
         border: none;
         cursor: pointer;
         outline: none;
+        display: block;
+    }
+
+    &__agree {
+        @include font(12px, 14px, 300);
+        color: $text;
     }
 }

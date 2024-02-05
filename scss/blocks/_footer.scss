@@ -1,2 +1,31 @@
 .footer {
+
+    &__container {
+        padding: 13px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__rules {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $black;
+    }
+
+    &__copyright {
+        padding: 13px 10px;
+        background-color: $black;
+        color: $white;
+        text-align: center;
+    }
 }

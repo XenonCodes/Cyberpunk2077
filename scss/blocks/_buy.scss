@@ -1,4 +1,46 @@
 .buy {
     background-color: $black;
     color: $white;
+    position: relative;
+
+    &::before {
+        content: "";
+        background-image: url(../img/buy/Untitled.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 47%;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__content {
+        width: 50%;
+        padding: 70px 0 70px 35px;
+    }
+
+    &__title {
+        font-family: 'Archangelsk', sans-serif;
+        @include font(62px, 63px);
+        margin: 0 0 25px 0;
+    }
+
+    &__text {
+        @include font(24px, 28px, 700);
+        color: $lselected-text;
+        margin: 0 0 25px 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 319px;
+        height: 133px;
+    }
 }
