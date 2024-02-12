@@ -11,6 +11,18 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0 20px 0 0;
+
+        @include tablet-mid {
+            justify-content: center;
+            padding: 0;
+        }
+    }
+
+    &__monitor {
+        @include tablet-mid {
+            max-width: 460px;
+        }
     }
 
     &__wrp-logo {
@@ -18,6 +30,12 @@
         margin: 26px 0 0;
         justify-content: space-between;
         width: 540px;
+
+        @include tablet-mid {
+            height: 230px;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__info {
