@@ -36,6 +36,10 @@
         font-family: 'Archangelsk', sans-serif;
         @include font(62px, 63px);
         margin: 0 0 25px 0;
+
+        @include mobile {
+            @include font(30px, 31px);
+        }
     }
 
     &__text {

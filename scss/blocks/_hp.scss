@@ -20,6 +20,8 @@
     }
 
     &__monitor {
+        width: 100%;
+
         @include tablet-mid {
             max-width: 460px;
         }
@@ -29,7 +31,7 @@
         display: flex;
         margin: 26px 0 0;
         justify-content: space-between;
-        width: 540px;
+        width: 100%;
 
         @include tablet-mid {
             height: 230px;
@@ -40,11 +42,16 @@
 
     &__info {
         max-width: 624px;
+        padding: 0 0 0 10px;
     }
 
     &__title {
         font-family: 'Archangelsk', sans-serif;
         @include font(62px, 63px);
+
+        @include mobile {
+            @include font(30px, 31px);
+        }
     }
 
     &__text {

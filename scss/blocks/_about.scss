@@ -9,6 +9,10 @@
         @include tablet-mid {
             max-width: 620px;
         }
+
+        @include mobile {
+            @include font(30px, 31px);
+        }
     }
 
     &__text {
